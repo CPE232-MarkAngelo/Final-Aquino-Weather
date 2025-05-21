@@ -7,7 +7,7 @@ from PIL import Image
 import os
 
 # Constants
-MODEL_PATH = "cnn_final_model.h5"
+MODEL_PATH = "cnn_model.h5"
   
 # Download the model if not present
 if not os.path.exists(MODEL_PATH):
