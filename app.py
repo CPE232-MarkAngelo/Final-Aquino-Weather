@@ -23,7 +23,7 @@ class_labels = ['Cloudy', 'Rain', 'Shine', 'Sunrise']
 st.title("The WeatherLENS 🌤️")
 st.write("By Mark Angelo A. Aquino")
 st.write("The WeatherLENS is an AI-powered image classification app that identifies weather conditions such as Cloudy, Rain, Shine, or Sunrise from photos. Using deep learning, it provides fast and accurate predictions to help users understand the weather captured in any image.")
-st.write("================================================================================================")
+st.write("========================================================================================")
 st.write("Upload a weather image and let us classify it!")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
