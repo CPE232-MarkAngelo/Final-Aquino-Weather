@@ -8,8 +8,8 @@ import os
 
 # Constants
 MODEL_PATH = "cnn_best_model.h5"
-MODEL_URL = "https://drive.google.com/uc?id=1KPZYjZ9rHY3nAGcYRYhNICf89Qt42ZSH"  
-
+MODEL_URL = "https://drive.google.com/uc?export=download&id=1KPZYjZ9rHY3nAGcYRYhNICf89Qt42ZSH"
+  
 # Download the model if not present
 if not os.path.exists(MODEL_PATH):
     with st.spinner("Downloading model..."):
