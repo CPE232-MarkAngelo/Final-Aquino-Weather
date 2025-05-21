@@ -20,8 +20,9 @@ model = load_model(MODEL_PATH)
 class_labels = ['Cloudy', 'Rain', 'Shine', 'Sunrise']  
 
 # Streamlit UI
-st.title("The Weather Image Classifier 🌤️")
+st.title("The WeatherLENS 🌤️")
 st.write("By Mark Angelo A. Aquino")
+st.write("The WeatherLENS is an AI-powered image classification app that identifies weather conditions such as Cloudy, Rain, Shine, or Sunrise from photos. Using deep learning, it provides fast and accurate predictions to help users understand the weather captured in any image.)"
 st.write("Upload a weather image and let us classify it!")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
@@ -39,5 +40,5 @@ if uploaded_file is not None:
     prediction = model.predict(img_array)
     predicted_class = class_labels[np.argmax(prediction)]
 
-    st.write(f"### The Predicted weather was: {predicted_class}")
+    st.write(f"### The predicted weather was: {predicted_class}")
 
