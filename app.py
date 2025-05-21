@@ -7,8 +7,7 @@ from PIL import Image
 import os
 
 # Constants
-MODEL_PATH = "final_model.h5"
-MODEL_URL = "https://drive.google.com/uc?id=1KPZYjZ9rHY3nAGcYRYhNICf89Qt42ZSH"
+MODEL_PATH = "cnn_final_model.h5"
   
 # Download the model if not present
 if not os.path.exists(MODEL_PATH):
