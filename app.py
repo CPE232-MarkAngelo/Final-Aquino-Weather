@@ -39,7 +39,8 @@ if uploaded_file is not None:
 
     # Predict
     prediction = model.predict(img_array)
-    predicted_class = class_labels[np.argmax(prediction)]
+    predicted_index = np.argmax(prediction)
+    predicted_class = class_labels[predicted_index]
     confidence = prediction[0][predicted_index] * 100
 
     st.write(f"### ✅ The predicted weather was: {predicted_class}")
