@@ -20,14 +20,15 @@ model = load_model(MODEL_PATH)
 class_labels = ['Cloudy', 'Rain', 'Shine', 'Sunrise']  
 
 # Streamlit UI
-st.title("Weather Image Classifier 🌤️")
-st.write("Upload a weather image and the model will classify it.")
+st.title("The Weather Image Classifier 🌤️")
+st.write("By Mark Angelo A. Aquino")
+st.write("Upload a weather image and let us classify it!")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
     img = Image.open(uploaded_file)
-    st.image(img, caption='Uploaded Image', use_column_width=True)
+    st.image(img, caption='Uploaded Image: This was your weather', use_column_width=True)
 
     # Preprocess image
     img = img.resize((256, 256))  
@@ -38,5 +39,5 @@ if uploaded_file is not None:
     prediction = model.predict(img_array)
     predicted_class = class_labels[np.argmax(prediction)]
 
-    st.write(f"### Prediction: {predicted_class}")
+    st.write(f"### The Predicted weather was: {predicted_class}")
 
