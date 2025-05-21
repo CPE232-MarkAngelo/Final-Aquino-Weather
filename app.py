@@ -8,10 +8,9 @@ from PIL import Image
 import os
 
 # Constants
-MODEL_PATH = "cnn_best_model.h5"
-MODEL_URL = "https://drive.google.com/uc?id=1nZW8eYURfS-XI9u_UrjFLjeD8AfrkZX3"
+MODEL_PATH = "cnn_best_model.h5" 
+MODEL_URL = "https://drive.google.com/uc?id=1MoSjWLeG154Pn-_VTl9bjV8mMGwXV-SX"
 
-# Download model if not already present
 if not os.path.exists(MODEL_PATH):
     with st.spinner("Downloading model..."):
         gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
