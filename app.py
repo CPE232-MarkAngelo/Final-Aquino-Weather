@@ -7,7 +7,7 @@ from PIL import Image
 import os
 
 # Constants
-MODEL_PATH = "cnn_best_model.h5"
+MODEL_PATH = "final_model.h5"
 MODEL_URL = "https://drive.google.com/uc?id=1KPZYjZ9rHY3nAGcYRYhNICf89Qt42ZSH"
   
 # Download the model if not present
